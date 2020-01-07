@@ -28,238 +28,256 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.button10 = new System.Windows.Forms.Button();
+            this.pole1 = new System.Windows.Forms.Button();
+            this.pole2 = new System.Windows.Forms.Button();
+            this.pole3 = new System.Windows.Forms.Button();
+            this.pole4 = new System.Windows.Forms.Button();
+            this.pole5 = new System.Windows.Forms.Button();
+            this.pole6 = new System.Windows.Forms.Button();
+            this.pole7 = new System.Windows.Forms.Button();
+            this.pole8 = new System.Windows.Forms.Button();
+            this.pole9 = new System.Windows.Forms.Button();
+            this.GlownyTekst = new System.Windows.Forms.Label();
+            this.PrzyciskNowaGra = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.LabelSumaWygrO = new System.Windows.Forms.Label();
+            this.LabelSumaWygrX = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // pole1
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.Menu;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Arial", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button1.Location = new System.Drawing.Point(12, 172);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(150, 150);
-            this.button1.TabIndex = 0;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.pole1.BackColor = System.Drawing.SystemColors.Control;
+            this.pole1.FlatAppearance.BorderSize = 0;
+            this.pole1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.pole1.Font = new System.Drawing.Font("Arial", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.pole1.Location = new System.Drawing.Point(8, 112);
+            this.pole1.Margin = new System.Windows.Forms.Padding(2);
+            this.pole1.Name = "pole1";
+            this.pole1.Size = new System.Drawing.Size(100, 97);
+            this.pole1.TabIndex = 0;
+            this.pole1.UseVisualStyleBackColor = false;
+            this.pole1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // pole2
             // 
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Arial", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button2.Location = new System.Drawing.Point(168, 172);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(150, 150);
-            this.button2.TabIndex = 1;
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.pole2.FlatAppearance.BorderSize = 0;
+            this.pole2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.pole2.Font = new System.Drawing.Font("Arial", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.pole2.Location = new System.Drawing.Point(112, 112);
+            this.pole2.Margin = new System.Windows.Forms.Padding(2);
+            this.pole2.Name = "pole2";
+            this.pole2.Size = new System.Drawing.Size(100, 97);
+            this.pole2.TabIndex = 1;
+            this.pole2.UseVisualStyleBackColor = true;
+            this.pole2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button3
+            // pole3
             // 
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Arial", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button3.Location = new System.Drawing.Point(324, 172);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(150, 150);
-            this.button3.TabIndex = 2;
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.pole3.FlatAppearance.BorderSize = 0;
+            this.pole3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.pole3.Font = new System.Drawing.Font("Arial", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.pole3.Location = new System.Drawing.Point(216, 112);
+            this.pole3.Margin = new System.Windows.Forms.Padding(2);
+            this.pole3.Name = "pole3";
+            this.pole3.Size = new System.Drawing.Size(100, 97);
+            this.pole3.TabIndex = 2;
+            this.pole3.UseVisualStyleBackColor = true;
+            this.pole3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button4
+            // pole4
             // 
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Arial", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button4.Location = new System.Drawing.Point(12, 328);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(150, 150);
-            this.button4.TabIndex = 3;
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.pole4.FlatAppearance.BorderSize = 0;
+            this.pole4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.pole4.Font = new System.Drawing.Font("Arial", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.pole4.Location = new System.Drawing.Point(8, 213);
+            this.pole4.Margin = new System.Windows.Forms.Padding(2);
+            this.pole4.Name = "pole4";
+            this.pole4.Size = new System.Drawing.Size(100, 97);
+            this.pole4.TabIndex = 3;
+            this.pole4.UseVisualStyleBackColor = true;
+            this.pole4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // button5
+            // pole5
             // 
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Arial", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button5.Location = new System.Drawing.Point(168, 328);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(150, 150);
-            this.button5.TabIndex = 4;
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.pole5.FlatAppearance.BorderSize = 0;
+            this.pole5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.pole5.Font = new System.Drawing.Font("Arial", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.pole5.Location = new System.Drawing.Point(112, 213);
+            this.pole5.Margin = new System.Windows.Forms.Padding(2);
+            this.pole5.Name = "pole5";
+            this.pole5.Size = new System.Drawing.Size(100, 97);
+            this.pole5.TabIndex = 4;
+            this.pole5.UseVisualStyleBackColor = true;
+            this.pole5.Click += new System.EventHandler(this.button5_Click);
             // 
-            // button6
+            // pole6
             // 
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Arial", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button6.Location = new System.Drawing.Point(324, 328);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(150, 150);
-            this.button6.TabIndex = 5;
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.pole6.FlatAppearance.BorderSize = 0;
+            this.pole6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.pole6.Font = new System.Drawing.Font("Arial", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.pole6.Location = new System.Drawing.Point(216, 213);
+            this.pole6.Margin = new System.Windows.Forms.Padding(2);
+            this.pole6.Name = "pole6";
+            this.pole6.Size = new System.Drawing.Size(100, 97);
+            this.pole6.TabIndex = 5;
+            this.pole6.UseVisualStyleBackColor = true;
+            this.pole6.Click += new System.EventHandler(this.button6_Click);
             // 
-            // button7
+            // pole7
             // 
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Arial", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button7.Location = new System.Drawing.Point(12, 484);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(150, 150);
-            this.button7.TabIndex = 6;
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
+            this.pole7.FlatAppearance.BorderSize = 0;
+            this.pole7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.pole7.Font = new System.Drawing.Font("Arial", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.pole7.Location = new System.Drawing.Point(8, 315);
+            this.pole7.Margin = new System.Windows.Forms.Padding(2);
+            this.pole7.Name = "pole7";
+            this.pole7.Size = new System.Drawing.Size(100, 97);
+            this.pole7.TabIndex = 6;
+            this.pole7.UseVisualStyleBackColor = true;
+            this.pole7.Click += new System.EventHandler(this.button7_Click);
             // 
-            // button8
+            // pole8
             // 
-            this.button8.FlatAppearance.BorderSize = 0;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Font = new System.Drawing.Font("Arial", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button8.Location = new System.Drawing.Point(168, 484);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(150, 150);
-            this.button8.TabIndex = 7;
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
+            this.pole8.FlatAppearance.BorderSize = 0;
+            this.pole8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.pole8.Font = new System.Drawing.Font("Arial", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.pole8.Location = new System.Drawing.Point(112, 315);
+            this.pole8.Margin = new System.Windows.Forms.Padding(2);
+            this.pole8.Name = "pole8";
+            this.pole8.Size = new System.Drawing.Size(100, 97);
+            this.pole8.TabIndex = 7;
+            this.pole8.UseVisualStyleBackColor = true;
+            this.pole8.Click += new System.EventHandler(this.button8_Click);
             // 
-            // button9
+            // pole9
             // 
-            this.button9.FlatAppearance.BorderSize = 0;
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Font = new System.Drawing.Font("Arial", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button9.Location = new System.Drawing.Point(324, 484);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(150, 150);
-            this.button9.TabIndex = 8;
-            this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
+            this.pole9.FlatAppearance.BorderSize = 0;
+            this.pole9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.pole9.Font = new System.Drawing.Font("Arial", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.pole9.Location = new System.Drawing.Point(216, 315);
+            this.pole9.Margin = new System.Windows.Forms.Padding(2);
+            this.pole9.Name = "pole9";
+            this.pole9.Size = new System.Drawing.Size(100, 97);
+            this.pole9.TabIndex = 8;
+            this.pole9.UseVisualStyleBackColor = true;
+            this.pole9.Click += new System.EventHandler(this.button9_Click);
             // 
-            // label1
+            // GlownyTekst
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label1.Location = new System.Drawing.Point(72, 22);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(351, 55);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "Tura Gracza: O";
+            this.GlownyTekst.AutoSize = true;
+            this.GlownyTekst.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.GlownyTekst.Location = new System.Drawing.Point(48, 14);
+            this.GlownyTekst.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.GlownyTekst.Name = "GlownyTekst";
+            this.GlownyTekst.Size = new System.Drawing.Size(232, 36);
+            this.GlownyTekst.TabIndex = 9;
+            this.GlownyTekst.Text = "Tura Gracza: O";
             // 
-            // button10
+            // PrzyciskNowaGra
             // 
-            this.button10.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button10.Location = new System.Drawing.Point(268, 113);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(187, 44);
-            this.button10.TabIndex = 10;
-            this.button10.Text = "Nowa Gra";
-            this.button10.UseVisualStyleBackColor = true;
-            this.button10.Visible = false;
-            this.button10.Click += new System.EventHandler(this.button10_Click);
+            this.PrzyciskNowaGra.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.PrzyciskNowaGra.Location = new System.Drawing.Point(179, 62);
+            this.PrzyciskNowaGra.Margin = new System.Windows.Forms.Padding(2);
+            this.PrzyciskNowaGra.Name = "PrzyciskNowaGra";
+            this.PrzyciskNowaGra.Size = new System.Drawing.Size(125, 33);
+            this.PrzyciskNowaGra.TabIndex = 10;
+            this.PrzyciskNowaGra.Text = "Nowa Gra";
+            this.PrzyciskNowaGra.UseVisualStyleBackColor = true;
+            this.PrzyciskNowaGra.Visible = false;
+            this.PrzyciskNowaGra.Click += new System.EventHandler(this.button10_Click);
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.pictureBox1.Location = new System.Drawing.Point(160, 193);
+            this.pictureBox1.Location = new System.Drawing.Point(107, 125);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(10, 422);
+            this.pictureBox1.Size = new System.Drawing.Size(7, 274);
             this.pictureBox1.TabIndex = 11;
             this.pictureBox1.TabStop = false;
             // 
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.pictureBox2.Location = new System.Drawing.Point(313, 193);
+            this.pictureBox2.Location = new System.Drawing.Point(209, 125);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(10, 422);
+            this.pictureBox2.Size = new System.Drawing.Size(7, 274);
             this.pictureBox2.TabIndex = 12;
             this.pictureBox2.TabStop = false;
             // 
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.pictureBox3.Location = new System.Drawing.Point(31, 318);
+            this.pictureBox3.Location = new System.Drawing.Point(21, 207);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(424, 10);
+            this.pictureBox3.Size = new System.Drawing.Size(283, 6);
             this.pictureBox3.TabIndex = 13;
             this.pictureBox3.TabStop = false;
             // 
             // pictureBox4
             // 
             this.pictureBox4.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.pictureBox4.Location = new System.Drawing.Point(31, 478);
+            this.pictureBox4.Location = new System.Drawing.Point(21, 311);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(424, 10);
-            this.pictureBox4.TabIndex = 14;
+            this.pictureBox4.Size = new System.Drawing.Size(283, 6);
+            this.pictureBox4.TabIndex = 20;
             this.pictureBox4.TabStop = false;
             // 
-            // label2
+            // LabelSumaWygrO
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label2.Location = new System.Drawing.Point(59, 104);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(162, 27);
-            this.label2.TabIndex = 15;
-            this.label2.Text = "Wygrane O: 0";
+            this.LabelSumaWygrO.AutoSize = true;
+            this.LabelSumaWygrO.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.LabelSumaWygrO.Location = new System.Drawing.Point(39, 62);
+            this.LabelSumaWygrO.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LabelSumaWygrO.Name = "LabelSumaWygrO";
+            this.LabelSumaWygrO.Size = new System.Drawing.Size(103, 18);
+            this.LabelSumaWygrO.TabIndex = 15;
+            this.LabelSumaWygrO.Text = "Wygrane O: 0";
             // 
-            // label3
+            // LabelSumaWygrX
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label3.Location = new System.Drawing.Point(59, 142);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(158, 27);
-            this.label3.TabIndex = 16;
-            this.label3.Text = "Wygrane X: 0";
+            this.LabelSumaWygrX.AutoSize = true;
+            this.LabelSumaWygrX.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.LabelSumaWygrX.Location = new System.Drawing.Point(40, 84);
+            this.LabelSumaWygrX.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LabelSumaWygrX.Name = "LabelSumaWygrX";
+            this.LabelSumaWygrX.Size = new System.Drawing.Size(102, 18);
+            this.LabelSumaWygrX.TabIndex = 16;
+            this.LabelSumaWygrX.Text = "Wygrane X: 0";
             // 
             // TicTacToe
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(486, 646);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
+            this.ClientSize = new System.Drawing.Size(324, 420);
+            this.Controls.Add(this.LabelSumaWygrX);
+            this.Controls.Add(this.LabelSumaWygrO);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.button10);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.button9);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.PrzyciskNowaGra);
+            this.Controls.Add(this.GlownyTekst);
+            this.Controls.Add(this.pole9);
+            this.Controls.Add(this.pole8);
+            this.Controls.Add(this.pole7);
+            this.Controls.Add(this.pole6);
+            this.Controls.Add(this.pole5);
+            this.Controls.Add(this.pole4);
+            this.Controls.Add(this.pole3);
+            this.Controls.Add(this.pole2);
+            this.Controls.Add(this.pole1);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "TicTacToe";
             this.Text = "Kółko i Krzyżyk";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -272,23 +290,23 @@
         }
 
         #endregion
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button pole1;
+        private System.Windows.Forms.Button pole2;
+        private System.Windows.Forms.Button pole3;
+        private System.Windows.Forms.Button pole4;
+        private System.Windows.Forms.Button pole5;
+        private System.Windows.Forms.Button pole6;
+        private System.Windows.Forms.Button pole7;
+        private System.Windows.Forms.Button pole8;
+        private System.Windows.Forms.Button pole9;
+        private System.Windows.Forms.Label GlownyTekst;
+        private System.Windows.Forms.Button PrzyciskNowaGra;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label LabelSumaWygrO;
+        private System.Windows.Forms.Label LabelSumaWygrX;
     }
 }
 

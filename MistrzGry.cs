@@ -18,79 +18,242 @@ namespace TicTacToe
 
         public MistrzGry()
         {
-            wygrana = false;
-            remis = false;
-            wygraneO = 0;
-            wygraneX = 0;
-            ruchy = 0;
+            this.wygrana = false;
+            this.remis = false;
+            this.wygraneO = 0;
+            this.wygraneX = 0;
+            this.ruchy = 0;
+            this.zwyciezca = ' ';
         }
 
-        public void CzyWygrana(string pole1, string pole2, string pole3,
-                               string pole4, string pole5, string pole6,
-                               string pole7, string pole8, string pole9)
+        public void CzyWygrana(Button Pole1, Button Pole2, Button Pole3,
+                               Button Pole4, Button Pole5, Button Pole6,
+                               Button Pole7, Button Pole8, Button Pole9,
+                               Button PrzyciskNowaGra, Gracze gracze, Label GlownyTekst, Label LabelSumaWygrO, Label LabelSumaWygrX)
         {
             // Poziome
-            if (pole1 == "X" && pole2 == "X" && pole3 == "X") { this.zwyciezca = 'X'; this.wygrana = true; }
-            if (pole1 == "O" && pole2 == "O" && pole3 == "O") { this.zwyciezca = 'O'; this.wygrana = true; }
-            if (pole4 == "X" && pole5 == "X" && pole6 == "X") { this.zwyciezca = 'X'; this.wygrana = true; }
-            if (pole4 == "O" && pole5 == "O" && pole6 == "O") { this.zwyciezca = 'O'; this.wygrana = true; }
-            if (pole7 == "X" && pole8 == "X" && pole9 == "X") { this.zwyciezca = 'X'; this.wygrana = true; }
-            if (pole7 == "O" && pole8 == "O" && pole9 == "O") { this.zwyciezca = 'O'; this.wygrana = true; }
+            if (Pole1.Text == "X" && Pole2.Text == "X" && Pole3.Text == "X" && this.wygrana != true)
+            {
+                this.zwyciezca = 'X';
+                this.wygrana = true;
+                
+                Pole1.BackColor = System.Drawing.Color.LightGreen;
+                Pole2.BackColor = System.Drawing.Color.LightGreen;
+                Pole3.BackColor = System.Drawing.Color.LightGreen;
+            }
+            if (Pole1.Text == "O" && Pole2.Text == "O" && Pole3.Text == "O" && this.wygrana != true)
+            {
+                this.zwyciezca = 'O';
+                this.wygrana = true;
+
+                Pole1.BackColor = System.Drawing.Color.LightGreen;
+                Pole2.BackColor = System.Drawing.Color.LightGreen;
+                Pole3.BackColor = System.Drawing.Color.LightGreen;
+            }
+            if (Pole4.Text == "X" && Pole5.Text == "X" && Pole6.Text == "X" && this.wygrana != true)
+            {
+                this.zwyciezca = 'X';
+                this.wygrana = true;
+
+                Pole4.BackColor = System.Drawing.Color.LightGreen;
+                Pole5.BackColor = System.Drawing.Color.LightGreen;
+                Pole6.BackColor = System.Drawing.Color.LightGreen;
+            }
+            if (Pole4.Text == "O" && Pole5.Text == "O" && Pole6.Text == "O" && this.wygrana != true)
+            {
+                this.zwyciezca = 'O';
+                this.wygrana = true;
+
+                Pole4.BackColor = System.Drawing.Color.LightGreen;
+                Pole5.BackColor = System.Drawing.Color.LightGreen;
+                Pole6.BackColor = System.Drawing.Color.LightGreen;
+            }
+            if (Pole7.Text == "X" && Pole8.Text == "X" && Pole9.Text == "X" && this.wygrana != true)
+            {
+                this.zwyciezca = 'X';
+                this.wygrana = true;
+
+                Pole7.BackColor = System.Drawing.Color.LightGreen;
+                Pole8.BackColor = System.Drawing.Color.LightGreen;
+                Pole9.BackColor = System.Drawing.Color.LightGreen;
+            }
+            if (Pole7.Text == "O" && Pole8.Text == "O" && Pole9.Text == "O" && this.wygrana != true)
+            {
+                this.zwyciezca = 'O';
+                this.wygrana = true;
+
+                Pole7.BackColor = System.Drawing.Color.LightGreen;
+                Pole8.BackColor = System.Drawing.Color.LightGreen;
+                Pole9.BackColor = System.Drawing.Color.LightGreen;
+            }
 
             // Pionowe
-            if (pole1 == "X" && pole4 == "X" && pole7 == "X") { this.zwyciezca = 'X'; this.wygrana = true; }
-            if (pole1 == "O" && pole4 == "O" && pole7 == "O") { this.zwyciezca = 'O'; this.wygrana = true; }
-            if (pole2 == "X" && pole5 == "X" && pole8 == "X") { this.zwyciezca = 'X'; this.wygrana = true; }
-            if (pole2 == "O" && pole5 == "O" && pole8 == "O") { this.zwyciezca = 'O'; this.wygrana = true; }
-            if (pole3 == "X" && pole6 == "X" && pole9 == "X") { this.zwyciezca = 'X'; this.wygrana = true; }
-            if (pole3 == "O" && pole6 == "O" && pole9 == "O") { this.zwyciezca = 'O'; this.wygrana = true; }
+            if (Pole1.Text == "X" && Pole4.Text == "X" && Pole7.Text == "X" && this.wygrana != true)
+            {
+                this.zwyciezca = 'X';
+                this.wygrana = true;
+
+                Pole1.BackColor = System.Drawing.Color.LightGreen;
+                Pole4.BackColor = System.Drawing.Color.LightGreen;
+                Pole7.BackColor = System.Drawing.Color.LightGreen;
+            }
+            if (Pole1.Text == "O" && Pole4.Text == "O" && Pole7.Text == "O" && this.wygrana != true)
+            {
+                this.zwyciezca = 'O';
+                this.wygrana = true;
+
+                Pole1.BackColor = System.Drawing.Color.LightGreen;
+                Pole4.BackColor = System.Drawing.Color.LightGreen;
+                Pole7.BackColor = System.Drawing.Color.LightGreen;
+            }
+            if (Pole2.Text == "X" && Pole5.Text == "X" && Pole8.Text == "X" && this.wygrana != true)
+            {
+                this.zwyciezca = 'X';
+                this.wygrana = true;
+
+                Pole2.BackColor = System.Drawing.Color.LightGreen;
+                Pole5.BackColor = System.Drawing.Color.LightGreen;
+                Pole8.BackColor = System.Drawing.Color.LightGreen;
+            }
+            if (Pole2.Text == "O" && Pole5.Text == "O" && Pole8.Text == "O" && this.wygrana != true)
+            {
+                this.zwyciezca = 'O';
+                this.wygrana = true;
+
+                Pole2.BackColor = System.Drawing.Color.LightGreen;
+                Pole5.BackColor = System.Drawing.Color.LightGreen;
+                Pole8.BackColor = System.Drawing.Color.LightGreen;
+            }
+            if (Pole3.Text == "X" && Pole6.Text == "X" && Pole9.Text == "X" && this.wygrana != true)
+            {
+                this.zwyciezca = 'X';
+                this.wygrana = true;
+
+                Pole3.BackColor = System.Drawing.Color.LightGreen;
+                Pole6.BackColor = System.Drawing.Color.LightGreen;
+                Pole9.BackColor = System.Drawing.Color.LightGreen;
+            }
+            if (Pole3.Text == "O" && Pole6.Text == "O" && Pole9.Text == "O" && this.wygrana != true)
+            {
+                this.zwyciezca = 'O';
+                this.wygrana = true;
+
+                Pole3.BackColor = System.Drawing.Color.LightGreen;
+                Pole6.BackColor = System.Drawing.Color.LightGreen;
+                Pole9.BackColor = System.Drawing.Color.LightGreen;
+            }
 
             // Skosy
-            if (pole1 == "X" && pole5 == "X" && pole9 == "X") { this.zwyciezca = 'X'; this.wygrana = true; }
-            if (pole1 == "O" && pole5 == "O" && pole9 == "O") { this.zwyciezca = 'O'; this.wygrana = true; }
-            if (pole3 == "X" && pole5 == "X" && pole7 == "X") { this.zwyciezca = 'X'; this.wygrana = true; }
-            if (pole3 == "O" && pole5 == "O" && pole7 == "O") { this.zwyciezca = 'O'; this.wygrana = true; }
+            if (Pole1.Text == "X" && Pole5.Text == "X" && Pole9.Text == "X" && this.wygrana != true)
+            {
+                this.zwyciezca = 'X';
+                this.wygrana = true;
 
-            /*
+                Pole1.BackColor = System.Drawing.Color.LightGreen;
+                Pole5.BackColor = System.Drawing.Color.LightGreen;
+                Pole9.BackColor = System.Drawing.Color.LightGreen;
+            }
+            if (Pole1.Text == "O" && Pole5.Text == "O" && Pole9.Text == "O" && this.wygrana != true)
+            {
+                this.zwyciezca = 'O';
+                this.wygrana = true;
+
+                Pole1.BackColor = System.Drawing.Color.LightGreen;
+                Pole5.BackColor = System.Drawing.Color.LightGreen;
+                Pole9.BackColor = System.Drawing.Color.LightGreen;
+            }
+            if (Pole3.Text == "X" && Pole5.Text == "X" && Pole7.Text == "X" && this.wygrana != true)
+            {
+                this.zwyciezca = 'X';
+                this.wygrana = true;
+
+                Pole3.BackColor = System.Drawing.Color.LightGreen;
+                Pole5.BackColor = System.Drawing.Color.LightGreen;
+                Pole7.BackColor = System.Drawing.Color.LightGreen;
+            }
+            if (Pole3.Text == "O" && Pole5.Text == "O" && Pole7.Text == "O" && this.wygrana != true)
+            { 
+                this.zwyciezca = 'O';
+                this.wygrana = true;
+
+                Pole3.BackColor = System.Drawing.Color.LightGreen;
+                Pole5.BackColor = System.Drawing.Color.LightGreen;
+                Pole7.BackColor = System.Drawing.Color.LightGreen;
+            }
+
             if (this.wygrana == true)
             {
-                sumaO = "Wygrane Osdas: ";
-
-
-                if (this.zwyciezca == 'O')
+                if (this.zwyciezca == 'X')
                 {
-                    ++this.wygraneO;
-                    sumaO = "Wygrane O: " + this.wygraneO;
+                    GlownyTekst.Text = "    Wygrywa X";
+                    
+                    this.wygraneX++;
+                    LabelSumaWygrX.Text = "Wygrane X: " + this.wygraneX;
                 }
                 else
                 {
-                    ++this.wygraneX;
-                    sumaX = "Wygrane X: " + this.wygraneX;
+                    GlownyTekst.Text = "    Wygrana O";
+                    
+                    this.wygraneO++;
+                    LabelSumaWygrO.Text = "Wygrane O: " + this.wygraneO;
                 }
+                PrzyciskNowaGra.Visible = true;
             }
-            */
+            else
+            {
+                gracze.NastepnyGracz(GlownyTekst);
+                GlownyTekst.Text = "Tura Gracza: " + gracze.tura;
+            }
         }
 
-        public bool CzyRemis()
+        public void CzyRemis(Label GlownyTekst, Button PrzyciskNowaGra)
         {
             if (this.ruchy == 9 && this.wygrana != true)
             {
                 this.remis = true;
+                GlownyTekst.Text = "       Remis";
+
+                PrzyciskNowaGra.Visible = true;
             }
-            return remis;
         }
 
-        public void KoniecTury(Button button1, Button button2, Button button3, Button button4, Button button5, Button button6, Button button7, Button button8, Button button9)
+        public void KoniecTury(Button Pole1, Button Pole2, Button Pole3, Button Pole4, Button Pole5, Button Pole6, Button Pole7, Button Pole8, Button Pole9, Button PrzyciskNowaGra, Gracze gracze, Label GlownyTekst, Label LabelSumaWygrO, Label LabelSumaWygrX)
         {
             this.ruchy++;
-            this.CzyWygrana(button1.Text, button2.Text, button3.Text, button4.Text, button5.Text, button6.Text, button7.Text, button8.Text, button9.Text);
-            this.CzyRemis();
+            this.CzyWygrana(Pole1, Pole2, Pole3, Pole4, Pole5, Pole6, Pole7, Pole8, Pole9, PrzyciskNowaGra, gracze, GlownyTekst, LabelSumaWygrO, LabelSumaWygrX);
+            this.CzyRemis(GlownyTekst, PrzyciskNowaGra);
         }
 
-        public void Punkty(Label label)
+        public void NowaGra(Button Pole1, Button Pole2, Button Pole3, Button Pole4, Button Pole5, Button Pole6, Button Pole7, Button Pole8, Button Pole9, Button PrzyciskNowaGra, Gracze gracze, Label GlownyTekst)
         {
-            if (this.zwyciezca == 'O') label.Text = "Wygrał gracz O!";
-            else label.Text = "Wygrał gracz X!";
+            Pole1.Text = "";
+            Pole2.Text = "";
+            Pole3.Text = "";
+            Pole4.Text = "";
+            Pole5.Text = "";
+            Pole6.Text = "";
+            Pole7.Text = "";
+            Pole8.Text = "";
+            Pole9.Text = "";
+
+            Pole1.BackColor = System.Drawing.SystemColors.Control;
+            Pole2.BackColor = System.Drawing.SystemColors.Control;
+            Pole3.BackColor = System.Drawing.SystemColors.Control;
+            Pole4.BackColor = System.Drawing.SystemColors.Control;
+            Pole5.BackColor = System.Drawing.SystemColors.Control;
+            Pole6.BackColor = System.Drawing.SystemColors.Control;
+            Pole7.BackColor = System.Drawing.SystemColors.Control;
+            Pole8.BackColor = System.Drawing.SystemColors.Control;
+            Pole9.BackColor = System.Drawing.SystemColors.Control;
+
+            this.wygrana = false;
+            this.remis = false;
+            this.zwyciezca = ' ';
+            this.ruchy = 0;
+
+            PrzyciskNowaGra.Visible = false;
+            gracze.LosujGraczy(GlownyTekst);
         }
+
     }
 }

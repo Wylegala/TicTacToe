@@ -12,193 +12,101 @@ namespace TicTacToe
 {
     public partial class TicTacToe : Form
     {
-
         Gracze Gracze1 = new Gracze();
 
         public TicTacToe()
         {
             InitializeComponent();
 
-            Gracze1.LosujGraczy(label1);
+            Gracze1.LosujGraczy(GlownyTekst);
         }
 
         MistrzGry Mistrz1 = new MistrzGry();
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (button1.Text == "" && Mistrz1.wygrana != true)
+            if (pole1.Text == "" && Mistrz1.wygrana != true)
             {
-                button1.Text = Gracze1.tura;
-                Mistrz1.KoniecTury(button1, button2, button3, button4, button5, button6, button7, button8, button9);
-
-                if (Mistrz1.wygrana == true)
-                {
-                    label1.Text = "Wygrana!";
-                }
-                else
-                {
-                    Gracze1.NastepnyGracz(label1);
-                    label1.Text = "Tura Gracza: " + Gracze1.tura;
-                }
+                pole1.Text = Gracze1.tura;
+                Mistrz1.KoniecTury(pole1, pole2, pole3, pole4, pole5, pole6, pole7, pole8, pole9, PrzyciskNowaGra, Gracze1, GlownyTekst, LabelSumaWygrO, LabelSumaWygrX);
             }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (button2.Text == "" && Mistrz1.wygrana != true)
+            if (pole2.Text == "" && Mistrz1.wygrana != true)
             {
-                button2.Text = Gracze1.tura;
-                Mistrz1.KoniecTury(button1, button2, button3, button4, button5, button6, button7, button8, button9);
-
-                if (Mistrz1.wygrana == true)
-                {
-                    label1.Text = "Wygrana!";
-                }
-                else
-                {
-                    Gracze1.NastepnyGracz(label1);
-                    label1.Text = "Tura Gracza: " + Gracze1.tura;
-                }
+                pole2.Text = Gracze1.tura;
+                Mistrz1.KoniecTury(pole1, pole2, pole3, pole4, pole5, pole6, pole7, pole8, pole9, PrzyciskNowaGra, Gracze1, GlownyTekst, LabelSumaWygrO, LabelSumaWygrX);
             }
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            if (button3.Text == "" && Mistrz1.wygrana != true)
+            if (pole3.Text == "" && Mistrz1.wygrana != true)
             {
-                button3.Text = Gracze1.tura;
-                Mistrz1.KoniecTury(button1, button2, button3, button4, button5, button6, button7, button8, button9);
-
-                if (Mistrz1.wygrana == true)
-                {
-                    label1.Text = "Wygrana!";
-                }
-                else
-                {
-                    Gracze1.NastepnyGracz(label1);
-                    label1.Text = "Tura Gracza: " + Gracze1.tura;
-                }
+                pole3.Text = Gracze1.tura;
+                Mistrz1.KoniecTury(pole1, pole2, pole3, pole4, pole5, pole6, pole7, pole8, pole9, PrzyciskNowaGra, Gracze1, GlownyTekst, LabelSumaWygrO, LabelSumaWygrX);
             }
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            if (button4.Text == "" && Mistrz1.wygrana != true)
+            if (pole4.Text == "" && Mistrz1.wygrana != true)
             {
-                button4.Text = Gracze1.tura;
-                Mistrz1.KoniecTury(button1, button2, button3, button4, button5, button6, button7, button8, button9);
-
-                if (Mistrz1.wygrana == true)
-                {
-                    label1.Text = "Wygrana!";
-                }
-                else
-                {
-                    Gracze1.NastepnyGracz(label1);
-                    label1.Text = "Tura Gracza: " + Gracze1.tura;
-                }
+                pole4.Text = Gracze1.tura;
+                Mistrz1.KoniecTury(pole1, pole2, pole3, pole4, pole5, pole6, pole7, pole8, pole9, PrzyciskNowaGra, Gracze1, GlownyTekst, LabelSumaWygrO, LabelSumaWygrX);
             }
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            if (button5.Text == "" && Mistrz1.wygrana != true)
+            if (pole5.Text == "" && Mistrz1.wygrana != true)
             {
-                button5.Text = Gracze1.tura;
-                Mistrz1.KoniecTury(button1, button2, button3, button4, button5, button6, button7, button8, button9);
-
-                if (Mistrz1.wygrana == true)
-                {
-                    label1.Text = "Wygrana!";
-                }
-                else
-                {
-                    Gracze1.NastepnyGracz(label1);
-                    label1.Text = "Tura Gracza: " + Gracze1.tura;
-                }
+                pole5.Text = Gracze1.tura;
+                Mistrz1.KoniecTury(pole1, pole2, pole3, pole4, pole5, pole6, pole7, pole8, pole9, PrzyciskNowaGra, Gracze1, GlownyTekst, LabelSumaWygrO, LabelSumaWygrX);
             }
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-            if (button6.Text == "" && Mistrz1.wygrana != true)
+            if (pole6.Text == "" && Mistrz1.wygrana != true)
             {
-                button6.Text = Gracze1.tura;
-                Mistrz1.KoniecTury(button1, button2, button3, button4, button5, button6, button7, button8, button9);
-
-                if (Mistrz1.wygrana == true)
-                {
-                    label1.Text = "Wygrana!";
-                }
-                else
-                {
-                    Gracze1.NastepnyGracz(label1);
-                    label1.Text = "Tura Gracza: " + Gracze1.tura;
-                }
+                pole6.Text = Gracze1.tura;
+                Mistrz1.KoniecTury(pole1, pole2, pole3, pole4, pole5, pole6, pole7, pole8, pole9, PrzyciskNowaGra, Gracze1, GlownyTekst, LabelSumaWygrO, LabelSumaWygrX);
             }
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
-            if (button7.Text == "" && Mistrz1.wygrana != true)
+            if (pole7.Text == "" && Mistrz1.wygrana != true)
             {
-                button7.Text = Gracze1.tura;
-                Mistrz1.KoniecTury(button1, button2, button3, button4, button5, button6, button7, button8, button9);
-
-                if (Mistrz1.wygrana == true)
-                {
-                    label1.Text = "Wygrana!";
-                }
-                else
-                {
-                    Gracze1.NastepnyGracz(label1);
-                    label1.Text = "Tura Gracza: " + Gracze1.tura;
-                }
+                pole7.Text = Gracze1.tura;
+                Mistrz1.KoniecTury(pole1, pole2, pole3, pole4, pole5, pole6, pole7, pole8, pole9, PrzyciskNowaGra, Gracze1, GlownyTekst, LabelSumaWygrO, LabelSumaWygrX);
             }
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
-            if (button8.Text == "" && Mistrz1.wygrana != true)
+            if (pole8.Text == "" && Mistrz1.wygrana != true)
             {
-                button8.Text = Gracze1.tura;
-                Mistrz1.KoniecTury(button1, button2, button3, button4, button5, button6, button7, button8, button9);
-
-                if (Mistrz1.wygrana == true)
-                {
-                    label1.Text = "Wygrana!";
-                }
-                else
-                {
-                    Gracze1.NastepnyGracz(label1);
-                    label1.Text = "Tura Gracza: " + Gracze1.tura;
-                }
+                pole8.Text = Gracze1.tura;
+                Mistrz1.KoniecTury(pole1, pole2, pole3, pole4, pole5, pole6, pole7, pole8, pole9, PrzyciskNowaGra, Gracze1, GlownyTekst, LabelSumaWygrO, LabelSumaWygrX);
             }
         }
 
         private void button9_Click(object sender, EventArgs e)
         {
-            if (button9.Text == "" && Mistrz1.wygrana != true)
+            if (pole9.Text == "" && Mistrz1.wygrana != true)
             {
-                button9.Text = Gracze1.tura;
-                Mistrz1.KoniecTury(button1, button2, button3, button4, button5, button6, button7, button8, button9);
-
-                if (Mistrz1.wygrana == true)
-                {
-                    label1.Text = "Wygrana!";
-                }
-                else
-                {
-                    Gracze1.NastepnyGracz(label1);
-                    label1.Text = "Tura Gracza: " + Gracze1.tura;
-                }
+                pole9.Text = Gracze1.tura;
+                Mistrz1.KoniecTury(pole1, pole2, pole3, pole4, pole5, pole6, pole7, pole8, pole9, PrzyciskNowaGra, Gracze1, GlownyTekst, LabelSumaWygrO, LabelSumaWygrX);
             }
         }
 
-        // Implemetacja przycisku nowej gry
         private void button10_Click(object sender, EventArgs e)
         {
-            
+            Mistrz1.NowaGra(pole1, pole2, pole3, pole4, pole5, pole6, pole7, pole8, pole9, PrzyciskNowaGra, Gracze1, GlownyTekst);
         }
     }
 }
