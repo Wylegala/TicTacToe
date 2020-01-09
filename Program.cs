@@ -1,23 +1,33 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading;
 
 namespace TicTacToe
 {
     static class Program
     {
-        /// <summary>
-        /// Główny punkt wejścia dla aplikacji.
-        /// </summary>
-        [STAThread]
+        
         static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new TicTacToe());
 
+            Thread pierwszyWatek = new Thread(WlaczGre1);
+            Thread drugiWatek = new Thread(WlaczGre2);
+
+            pierwszyWatek.Start();
+            drugiWatek.Start();
+        }
+
+        static void WlaczGre1()
+        {
+            Application.Run(new TicTacToe());
+        }
+        static void WlaczGre2()
+        {
+            Application.Run(new TicTacToe());
         }
     }
 }

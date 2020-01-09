@@ -259,7 +259,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(324, 420);
+            this.ClientSize = new System.Drawing.Size(324, 411);
             this.Controls.Add(this.LabelSumaWygrX);
             this.Controls.Add(this.LabelSumaWygrO);
             this.Controls.Add(this.pictureBox4);
